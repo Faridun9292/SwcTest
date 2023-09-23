@@ -26,7 +26,7 @@ class EventController extends Controller
     {
         $event->users()->attach(auth()->id());
 
-        return back()->with('status', 'Вы успешно покинули Event');
+        return back()->with('status', 'Вы успешно присоединились к Event');
     }
 
     public function leaveEvent(Event $event)
