@@ -26,7 +26,7 @@ class EventService
             ->latest()
             ->get();
 
-        $event = $allEvents[0];
+        $event = $allEvents[0] ?? null;
 
         if ($id !== null) {
             $event = Event::find($id);

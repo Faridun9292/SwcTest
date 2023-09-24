@@ -8,6 +8,7 @@
             </div>
         </div>
     @endif
+    @if($event)
     <div id="container">
         <div class="row mb-3">
             <div class="col">
@@ -59,6 +60,7 @@
             </div>
         </div>
     </div>
+    @endif
 
     <script>
         setTimeout(() => location.reload(), 30000)
